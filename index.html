@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ابوالفضل افشار | مهندسی نفت</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Vazirmatn', sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
       line-height: 1.8;
+      padding: 2rem;
     }
     header {
-      background-color: #1f1f1f;
-      padding: 2rem;
+      border-bottom: 2px solid #00bcd4;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      box-shadow: 0 0 10px #000;
-      position: relative;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       color: #00bcd4;
+      margin-bottom: 0.5rem;
     }
     header p {
       font-size: 1.2rem;
-      color: #cccccc;
+      color: #ccc;
     }
     .language-switch {
       position: absolute;
@@ -35,60 +43,51 @@
     }
     .language-switch a {
       color: #00bcd4;
-      text-decoration: none;
       font-weight: bold;
-      font-size: 1rem;
-    }
-    .language-switch a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
     main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 0 auto;
     }
-    section {
+    .section {
+      border-left: 4px solid #00bcd4;
+      padding: 1rem 2rem;
       margin-bottom: 2rem;
+      background-color: #121212;
     }
-    .card {
-      background-color: #1c1c1c;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    h2 {
+      color: #00bcd4;
+      margin-bottom: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
     }
     a {
       color: #00bcd4;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #181818;
+      margin-top: 4rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #666;
     }
   </style>
 </head>
 <body>
-
+  <div class="language-switch">
+    <a href="en.html">English</a>
+  </div>
   <header>
-    <div class="language-switch">
-      <a href="en.html" aria-label="Switch to English">English</a>
-    </div>
     <h1>ابوالفضل افشار</h1>
     <p>دانشجوی مهندسی نفت</p>
   </header>
-
   <main>
-    <section class="card">
+    <div class="section">
       <h2>درباره من</h2>
-      <p>من ابوالفضل هستم؛ دانشجوی مهندسی نفت با علاقه به مهندسی مخزن، فناوری، و یادگیری مستمر. رؤیای من تحصیل در <a href="https://www.imperial.ac.uk/petroleum-engineering/" target="_blank" rel="noopener noreferrer">Imperial College London</a> و تبدیل شدن به یک مهندس جهانی در حوزه انرژی است.</p>
-    </section>
-
-    <section class="card">
+      <p>من ابوالفضل هستم؛ دانشجوی مهندسی نفت با علاقه‌ به مهندسی مخزن، فناوری و یادگیری مستمر. رؤیای من تحصیل در <a href="https://www.imperial.ac.uk/petroleum-engineering/" target="_blank">Imperial College London</a> و تبدیل شدن به یک مهندس جهانی در حوزه انرژی است.</p>
+    </div>
+    <div class="section">
       <h2>زمینه‌های علاقه</h2>
       <ul>
         <li>مهندسی مخزن و تحلیل داده‌های مغزه</li>
@@ -96,19 +95,14 @@
         <li>استارتاپ و کارآفرینی در حوزه انرژی</li>
         <li>مطالعه، نوشتن و توسعه فردی</li>
       </ul>
-    </section>
-
-    <section class="card">
-      <h2>ارتباط با من</h2>
-      <p>
-        ایمیل: <a href="mailto:abolfazl.afshar.eng@gmail.com">abolfazl.afshar.eng@gmail.com</a>
-      </p>
-    </section>
+    </div>
+    <div class="section">
+      <h2>راه ارتباطی</h2>
+      <p>ایمیل: <a href="mailto:abolfazl.afshar.eng@gmail.com">abolfazl.afshar.eng@gmail.com</a></p>
+    </div>
   </main>
-
   <footer>
     &copy; ابوالفضل افشار | ساخته‌شده با ❤️
   </footer>
-
 </body>
 </html>
