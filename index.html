@@ -2,136 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abolfazl Afshar | Petroleum Engineering</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abolfazl Afshar | Petroleum Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
+      font-family: 'Orbitron', sans-serif;
       box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
     }
+
     body {
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #0a0f1c;
+      color: #e0e0e0;
       line-height: 1.6;
     }
-    .container {
+
+    header {
+      background: linear-gradient(to right, #111827, #1f2937);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #00ffcc;
+    }
+
+    header p {
+      font-size: 1.3em;
+      color: #cccccc;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
       max-width: 1000px;
-      margin: 40px auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: row;
+      margin: auto;
     }
-    .left {
-      width: 35%;
-      background: #002147;
-      color: white;
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #00ffd5;
+      border-bottom: 2px solid #00ffd5;
+      display: inline-block;
+    }
+
+    .projects, .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1f2937;
       padding: 20px;
-    }
-    .left img {
-      width: 100%;
       border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
     }
-    .left h1 {
-      margin-top: 20px;
-      font-size: 22px;
+
+    .card:hover {
+      transform: translateY(-5px);
     }
-    .left p {
-      font-size: 14px;
-      margin: 5px 0 20px;
+
+    footer {
+      background-color: #111827;
+      color: #888;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9em;
     }
-    .left h3 {
-      font-size: 16px;
-      margin-top: 30px;
+
+    a {
+      color: #00ffd5;
+      text-decoration: none;
     }
-    .left ul {
-      list-style: none;
-      font-size: 14px;
-    }
-    .left ul li {
-      margin: 5px 0;
-    }
-    .right {
-      width: 65%;
-      padding: 30px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    .section h2 {
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-    .experience h3, .education h3 {
-      font-size: 16px;
-      color: #002147;
-    }
-    .skills div {
-      margin: 10px 0;
-    }
-    .bar {
-      height: 6px;
-      background: #ccc;
-      border-radius: 5px;
-      position: relative;
-      margin-top: 5px;
-    }
-    .bar span {
-      position: absolute;
-      height: 100%;
-      background: #FFD700;
-      border-radius: 5px;
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="left">
-      <img src="Black Minimalist Structural Engineer Resume.png" alt="Abolfazl Afshar">
-      <h1>Abolfazl Afshar</h1>
-      <p>Petroleum Engineering Student</p>
-      <h3>Contact</h3>
-      <ul>
-        <li>P: +98-***-***-****</li>
-        <li>E: Abolfazl.afshar.eng@gmail.com</li>
-        <li>A: ---</li>
-      </ul>
-      <h3>Education</h3>
-      <p><strong>Petroleum University of Technology</strong> 2022–2026<br>
-      Ayyatollah Behbahani Blvd., Ahwaz, Khuzestan, Iran<br>
-      <em>Bachelor of Science: Petroleum Engineering</em></p>
+
+<header>
+  <h1>Abolfazl Afshar</h1>
+  <p>Petroleum Engineering Student | Reservoir & Energy Enthusiast</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a third-year Petroleum Engineering student passionate about reservoir modeling,
+    porous media, and energy innovation. My academic focus is on reservoir engineering,
+    fluid flow, and data-driven analysis in the oil & gas industry.
+  </p>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Reservoir Simulation (CMG)</h3>
+      <p>Designed a basic black oil reservoir simulation using CMG software to analyze production scenarios under varying pressure and porosity conditions.</p>
     </div>
-    <div class="right">
-      <div class="section summary">
-        <h2>Summary</h2>
-        <p>I am an enthusiastic Petroleum Engineering student with a deep interest in Reservoir Engineering and porous media research. Currently pursuing a Bachelor's degree, I have undertaken projects that enhance my understanding of subsurface fluid flow and reservoir dynamics. My future goal is to contribute to cutting-edge energy solutions while pursuing advanced studies at institutions like Imperial College London.</p>
-        <p>I am also actively improving my English communication skills to achieve high proficiency and global competitiveness.</p>
-      </div>
-      <div class="section experience">
-        <h2>Experience</h2>
-        <h3>Iranian Offshore Oil Company</h3>
-        <p><em>Exploitation & production Engineer / Summer Internship 2024</em></p>
-        <ul>
-          <li>---</li>
-          <li>---</li>
-        </ul>
-      </div>
-      <div class="section skills">
-        <h2>Skills</h2>
-        <div>--- <div class="bar"><span style="width: 85%;"></span></div></div>
-        <div>--- <div class="bar"><span style="width: 70%;"></span></div></div>
-        <div>--- <div class="bar"><span style="width: 90%;"></span></div></div>
-        <div>--- <div class="bar"><span style="width: 80%;"></span></div></div>
-        <div>--- <div class="bar"><span style="width: 75%;"></span></div></div>
-        <div>--- <div class="bar"><span style="width: 65%;"></span></div></div>
-        <div>--- <div class="bar"><span style="width: 70%;"></span></div></div>
-      </div>
+    <div class="card">
+      <h3>Core Analysis Lab Report</h3>
+      <p>Conducted porosity and permeability tests on real core samples, including Dean-Stark saturation extraction, and interpreted results using reservoir rock properties.</p>
+    </div>
+    <div class="card">
+      <h3>Drilling Engineering Case Study</h3>
+      <p>Prepared well design and bit selection plan for a directional well using real field data under Dr. Shahbazi’s supervision.</p>
     </div>
   </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <h3>Reservoir Engineering</h3>
+      <p>Material balance, decline curve analysis, PVT analysis</p>
+    </div>
+    <div class="card">
+      <h3>Software</h3>
+      <p>CMG, ECLIPSE, MATLAB, Excel VBA, Python (basic)</p>
+    </div>
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <p>Scientific writing, teamwork, research, presentation</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>
+    📧 Email: <a href="mailto:abolfazl.engineer@gmail.com">abolfazl.engineer@gmail.com</a><br/>
+    💼 GitHub: <a href="https://github.com/abolfazlafshar" target="_blank">abolfazlafshar</a><br/>
+    🌐 LinkedIn: <a href="https://linkedin.com/in/abolfazl-afshar" target="_blank">abolfazl-afshar</a>
+  </p>
+</section>
+
+<footer>
+  &copy; 2025 Abolfazl Afshar. All rights reserved.
+</footer>
+
 </body>
 </html>
