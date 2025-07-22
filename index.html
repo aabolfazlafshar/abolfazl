@@ -17,7 +17,6 @@
       padding: 2rem;
       text-align: center;
       box-shadow: 0 0 10px #000;
-      position: relative;
     }
     header h1 {
       margin: 0;
@@ -27,20 +26,6 @@
     header p {
       font-size: 1.2rem;
       color: #cccccc;
-    }
-    .language-switch {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-    }
-    .language-switch a {
-      color: #00bcd4;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-    .language-switch a:hover {
-      text-decoration: underline;
     }
     main {
       padding: 2rem;
@@ -70,14 +55,26 @@
       font-size: 0.9rem;
       color: #777;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #333;
+      transition: 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.02);
+      border-color: #00bcd4;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="language-switch">
-      <a href="index.html" aria-label="Switch to Persian">فارسی</a>
-    </div>
     <h1>Abolfazl Afshar</h1>
     <p>Petroleum Engineering Student</p>
   </header>
@@ -85,7 +82,23 @@
   <main>
     <section class="card">
       <h2>About Me</h2>
-      <p>I'm Abolfazl, a petroleum engineering student with a passion for reservoir engineering, technology, and continuous learning. My dream is to study at <a href="https://www.imperial.ac.uk/petroleum-engineering/" target="_blank" rel="noopener noreferrer">Imperial College London</a> and become a global leader in the energy sector.</p>
+      <p>
+        I'm Abolfazl, a passionate petroleum engineering student deeply interested in reservoir simulation, energy systems, and data-driven decision-making.  
+        My long-term ambition is to pursue my Master's at <a href="https://www.imperial.ac.uk/petroleum-engineering/" target="_blank">Imperial College London</a> and contribute to the development of smarter, more sustainable energy extraction technologies.
+        <br><br>
+        I enjoy blending engineering with programming, conducting research, and working on projects that solve real-world energy challenges. In addition to my technical interests, I’m committed to personal development, innovation, and writing.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Education</h2>
+      <p><strong>University:</strong> Petroleum Engineering, Bachelor of Science<br>
+         <strong>Institution:</strong> Petroleum University of Technology (PUT), Ahvaz, Iran<br>
+         <strong>GPA:</strong> 17.80 / 20</p>
+      <br>
+      <p><strong>High School:</strong> National Organization for Development of Exceptional Talents (NODET)<br>
+         <strong>Major:</strong> Mathematics & Physics<br>
+         <strong>GPA:</strong> 19.36 / 20</p>
     </section>
 
     <section class="card">
@@ -99,15 +112,25 @@
     </section>
 
     <section class="card">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="images/core-lab.jpg" alt="Core Lab" />
+        <img src="images/simulation.jpg" alt="Simulation Software" />
+        <img src="images/drilling.jpg" alt="Drilling Lab" />
+      </div>
+      <p style="font-size: 0.9rem; color: #aaa; margin-top: 10px;">Images from coursework, labs, and research (demo)</p>
+    </section>
+
+    <section class="card">
       <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:abolfazl.afshar.eng@gmail.com">abolfazl.afshar.eng@gmail.com</a>
-      </p>
+      <p>Email: <a href="mailto:abolfazl.afshar.eng@gmail.com">abolfazl.afshar.eng@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/your_username" target="_blank">@your_username</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/your_linkedin" target="_blank">linkedin.com/in/your_linkedin</a></p>
     </section>
   </main>
 
   <footer>
-    &copy; Abolfazl Afshar | Made with ❤️
+    &copy; Abolfazl Afshar | Made with ❤️ for energy & innovation
   </footer>
 
 </body>
